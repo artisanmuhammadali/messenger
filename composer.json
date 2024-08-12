@@ -1,0 +1,35 @@
+{
+    "name": "gerardojbaez/messenger",
+    "description": "copy of gerardojbaez/messenger for laravel larest versions.",
+    "keywords": ["laravel", "messenger", "messages"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "ArtisanAli",
+            "email": "artisanmuhammadali@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {
+        "php": ">=5.5.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "4.*",
+    },
+    "autoload": {
+        "psr-4": {
+            "ArtisanAli\\Messenger\\Tests\\": "tests",
+            "ArtisanAli\\Messenger\\": "src/Messenger/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "ArtisanAli\\Messenger\\MessengerServiceProvider"
+            ],
+            "aliases": {
+                "Messenger": "ArtisanAli\\Messenger\\Facades\\Messenger"
+            }
+        }
+    }
+}
